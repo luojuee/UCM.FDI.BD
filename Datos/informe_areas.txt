@@ -1,0 +1,54 @@
+
+SQL*Loader: Release 11.2.0.1.0 - Production on Vie Nov 25 15:15:02 2016
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+Archivo de Control:   areas.ctl
+Archivo de Datos:      areas.txt
+  Archivo de Errores:     areas.bad
+  Desechar Archivo:  ninguno especificado
+ 
+ (Permitir todos los registros desechados)
+
+Número a cargar: ALL
+Número a ignorar: 0
+Errores permitidos: 50
+Matriz de enlace:     64 filas, máximo de 256000 bytes
+Continuación:    ninguno especificado
+Ruta de acceso utilizada:      Convencional
+
+Tabla AREASCOBERTURA, cargada de cada registro lógico.
+Opción INSERT activa para esta tabla: APPEND
+
+   Nombre Columna               Posición   Long  Term Entorno Tipo de Dato
+------------------------------ ---------- ----- ---- ---- ---------------------
+RESTAURANTE                         FIRST     *   ;       CHARACTER            
+CODIGOPOSTAL                         NEXT     *   ;       CHARACTER            
+
+Registro 1: Rechazado - Error en tabla AREASCOBERTURA.
+ORA-00001: restricción única (GIIC10.SYS_C0013633) violada
+
+Registro 6: Rechazado - Error en tabla AREASCOBERTURA.
+ORA-02291: restricción de integridad (GIIC10.SYS_C0013634) violada - clave principal no encontrada
+
+
+Tabla AREASCOBERTURA:
+  4 Filas se ha cargado correctamente.
+  2 Filas no cargada debido a errores de datos.
+  0 Filas no cargada porque todas las cláusulas WHEN han fallado.
+  0 Filas no cargada porque todos los campos eran nulos.
+
+
+Espacio asignado a matriz de enlace:            33024 bytes (64 filas)
+Bytes de buffer de lectura: 1048576
+
+Total de registros lógicos ignorados:          0
+Total de registros lógicos leídos:           6
+Total de registros lógicos rechazados:         2
+Total de registros lógicos desechados:        0
+
+La ejecución empezó en Vie Nov 25 15:15:02 2016
+La ejecución terminó en Vie Nov 25 15:15:03 2016
+
+Tiempo transcurrido:     00:00:00.20
+Tiempo de CPU:         00:00:00.02
